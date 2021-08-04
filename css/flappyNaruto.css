@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family: 'njnaruto';
+    src: url('../fonts/njnaruto.ttf') format('truetype');
+}
+
+* {
+    font-family: 'njnaruto', sans-serif;
+    
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #0D262D;
+    color: #fff;
+    height: 100%;
+    color: #ffa500;
+    font-size: 30px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+
+body{
+    
+    background-image: url('../img/konohaPapelFundo.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+*{
+    box-sizing: border-box;
+    
+}
+[wm-flappy] {
+    position: relative;
+    border:  5px solid darkorange;
+    height: 576px;
+    width: 876px;
+    margin: 15px;
+    background-image: url('../img/papel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+.naruto {
+    position: absolute;
+    width: 100px;
+    left: calc(40% - 30px);
+}
+.par-de-barreiras{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barreira .borda{
+    height: 50px;
+    width: 60px;
+    border-radius: 20px;
+    background:linear-gradient(90deg, #008F39,#006400 );
+    border: 2px solid #000;
+}
+
+.barreira .corpo{
+    width: 25px;
+    height: 20px;
+    background: linear-gradient(90deg, #964b00,#4B3621 );
+    border-left: 2px solid  #000;
+    border-right: 2px solid  #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 3px;
+    right: 22px;
+    font-size: 50px;
+}
